@@ -8,13 +8,13 @@ import { FaDollarSign } from "react-icons/fa";
 
 
 
-const Resumo = () => {
+const Resumo = ({income, expense, total}) => {
     return (
         <c.Container>  
             
-            <ResumoItens title="Entradas" Icon={FaArrowCircleUp} value="1000"/>
-            <ResumoItens title="Saídas" Icon={FaArrowCircleDown} value="1000"/>
-            <ResumoItens title="Total" Icon={FaDollarSign} value="1000"/>
+            <ResumoItens title="Entradas" Icon={FaArrowCircleUp} value={income}/>
+            <ResumoItens title="Saídas" Icon={FaArrowCircleDown} value={expense}/>
+            <ResumoItens title="Total" Icon={FaDollarSign} value={total}/>
 
         </c.Container>
     )
